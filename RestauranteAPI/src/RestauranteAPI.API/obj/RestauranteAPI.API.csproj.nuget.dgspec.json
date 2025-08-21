@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.API\\RestauranteAPI.API.csproj": {}
+    "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.API\\RestauranteAPI.API.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.API\\RestauranteAPI.API.csproj": {
+    "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.API\\RestauranteAPI.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.API\\RestauranteAPI.API.csproj",
+        "projectUniqueName": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.API\\RestauranteAPI.API.csproj",
         "projectName": "RestauranteAPI.API",
-        "projectPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.API\\RestauranteAPI.API.csproj",
+        "projectPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.API\\RestauranteAPI.API.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.API\\obj\\",
+        "outputPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj": {
-                "projectPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj"
+              "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj": {
+                "projectPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj"
               },
-              "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj": {
-                "projectPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj"
+              "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj": {
+                "projectPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj"
               }
             }
           }
@@ -62,6 +62,8 @@
               "version": "[9.0.6, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.8, )"
             }
@@ -89,14 +91,14 @@
         }
       }
     },
-    "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj": {
+    "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj",
+        "projectUniqueName": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj",
         "projectName": "RestauranteAPI.Application",
-        "projectPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj",
+        "projectPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Application\\obj\\",
+        "outputPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -117,8 +119,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj": {
-                "projectPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj"
+              "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj": {
+                "projectPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj"
               }
             }
           }
@@ -158,14 +160,14 @@
         }
       }
     },
-    "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj": {
+    "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
+        "projectUniqueName": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
         "projectName": "RestauranteAPI.Domain",
-        "projectPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
+        "projectPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Domain\\obj\\",
+        "outputPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -223,14 +225,14 @@
         }
       }
     },
-    "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj": {
+    "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj",
         "projectName": "RestauranteAPI.Infrastructure",
-        "projectPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj",
+        "projectPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Infrastructure\\obj\\",
+        "outputPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -251,11 +253,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj": {
-                "projectPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj"
+              "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj": {
+                "projectPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj"
               },
-              "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj": {
-                "projectPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj"
+              "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj": {
+                "projectPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj"
               }
             }
           }

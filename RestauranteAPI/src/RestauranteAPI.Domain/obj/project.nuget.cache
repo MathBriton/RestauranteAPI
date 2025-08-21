@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3ld8xhtG+8Q=",
+  "dgSpecHash": "dsU8KLRMMs0=",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
+  "projectFilePath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

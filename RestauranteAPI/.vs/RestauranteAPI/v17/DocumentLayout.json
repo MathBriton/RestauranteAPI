@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Projetos\\RestauranteAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7A05C9-B80C-46DB-B825-8379526E948F}|src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.domain\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7A05C9-B80C-46DB-B825-8379526E948F}|src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj|solutionrelative:src\\restauranteapi.domain\\entities\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7A05C9-B80C-46DB-B825-8379526E948F}|src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7A05C9-B80C-46DB-B825-8379526E948F}|src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj|solutionrelative:src\\restauranteapi.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7A05C9-B80C-46DB-B825-8379526E948F}|src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7A05C9-B80C-46DB-B825-8379526E948F}|src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj|solutionrelative:src\\restauranteapi.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7A05C9-B80C-46DB-B825-8379526E948F}|src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.domain\\entities\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7A05C9-B80C-46DB-B825-8379526E948F}|src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj|solutionrelative:src\\restauranteapi.domain\\entities\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\Entities\\OrderItem.cs",
+              "RelativeDocumentMoniker": "src\\RestauranteAPI.Domain\\Entities\\OrderItem.cs",
+              "ToolTip": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\Entities\\OrderItem.cs",
+              "RelativeToolTip": "src\\RestauranteAPI.Domain\\Entities\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:22:11.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "src\\RestauranteAPI.Domain\\Entities\\Order.cs",
+              "ToolTip": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\Entities\\Order.cs",
+              "RelativeToolTip": "src\\RestauranteAPI.Domain\\Entities\\Order.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA7wCoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:17:06.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "src\\RestauranteAPI.Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "src\\RestauranteAPI.Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAxwCUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:13:30.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Table.cs",
+              "DocumentMoniker": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\Entities\\Table.cs",
+              "RelativeDocumentMoniker": "src\\RestauranteAPI.Domain\\Entities\\Table.cs",
+              "ToolTip": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\Entities\\Table.cs",
+              "RelativeToolTip": "src\\RestauranteAPI.Domain\\Entities\\Table.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T16:01:37.182Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+# =========================
+# Visual Studio
+# =========================
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Build Folders
+# =========================
+bin/
+obj/
+out/
+
+# =========================
+# Rider
+# =========================
+.idea/
+
+# =========================
+# Node / React
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+
+# =========================
+# .NET Core / .NET 5+
+# =========================
+*.dll
+*.exe
+*.pdb
+*.cache
+*.mdb
+*.log
+*.vsix
+*.dbmdl
+
+# =========================
+# Entity Framework
+# =========================
+Migrations/
+*.Snapshot.cs
+
+# =========================
+# User-specific files
+# =========================
+*.suo
+*.user
+*.userprefs
+
+# =========================
+# JetBrains Rider
+# =========================
+.idea/
+*.sln.iml
+
+# =========================
+# OS generated
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Others
+# =========================
+.env
+.env.local

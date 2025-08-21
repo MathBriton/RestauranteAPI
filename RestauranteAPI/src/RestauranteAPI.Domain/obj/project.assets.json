@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
+      "projectUniqueName": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
       "projectName": "RestauranteAPI.Domain",
-      "projectPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
+      "projectPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj",
       "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Domain\\obj\\",
+      "outputPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

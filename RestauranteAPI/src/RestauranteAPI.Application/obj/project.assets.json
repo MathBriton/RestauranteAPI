@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "RestauranteAPI.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/RestauranteAPI.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RestauranteAPI.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RestauranteAPI.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RestauranteAPI.Domain/RestauranteAPI.Domain.csproj",
+      "msbuildProject": "../RestauranteAPI.Domain/RestauranteAPI.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "RestauranteAPI.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Matheus\\.nuget\\packages\\": {},
@@ -14,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj",
+      "projectUniqueName": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj",
       "projectName": "RestauranteAPI.Application",
-      "projectPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj",
+      "projectPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Application\\RestauranteAPI.Application.csproj",
       "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\Dotnet\\src\\RestauranteAPI.Application\\obj\\",
+      "outputPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -38,7 +57,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj": {
+              "projectPath": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Domain\\RestauranteAPI.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
