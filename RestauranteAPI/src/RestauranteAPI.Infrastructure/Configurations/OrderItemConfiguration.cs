@@ -1,12 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using RestauranteAPI.Domain.Entities;
 
-namespace RestauranteAPI.Infrastructure.Configurations
+namespace RestauranteAPI.Infrastructure.Configurations;
+
+public class OrderConfiguration : IEntityTypeConfiguration<Order>
 {
-    internal class OrderItemConfiguration
+    public void Configure(EntityTypeBuilder<Order> builder)
     {
+        builder.ToTable("Orders");
+        builder.HasKey(o => o.Id);
+
+        builder.Property(o => o.CreatedAt)
+               .IsRequired();
+
+        builder.Property(o => o.IsClosed)
+               .IsRequired();
+
+        builder.HasMany(o => o.Items)
+               .WithOne()
+               .HasForeignKey(i => i.OrderId);
+
+        builder.HasOne(o => o.Table)
+               .WithMany(t => t.Orders)
+               .HasForeignKey(o => o.TableId);
     }
 }
