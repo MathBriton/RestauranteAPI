@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Projetos\\RestauranteAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|solutionrelative:src\\restauranteapi.infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|solutionrelative:src\\restauranteapi.infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.infrastructure\\repositories\\tablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|solutionrelative:src\\restauranteapi.infrastructure\\repositories\\tablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.infrastructure\\configurations\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|solutionrelative:src\\restauranteapi.infrastructure\\configurations\\orderconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,18 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.infrastructure\\context\\restaurantecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|solutionrelative:src\\restauranteapi.infrastructure\\context\\restaurantecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|solutionrelative:src\\restauranteapi.infrastructure\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|solutionrelative:src\\restauranteapi.infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.infrastructure\\repositories\\tablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|solutionrelative:src\\restauranteapi.infrastructure\\repositories\\tablerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9235544A-0010-42C3-A195-F95CD842CD16}|src\\RestauranteAPI.Infrastructure\\RestauranteAPI.Infrastructure.csproj|c:\\projetos\\restauranteapi\\src\\restauranteapi.infrastructure\\restauranteapi.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -74,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,43 +86,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "OrderRepository.cs",
               "DocumentMoniker": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\Repositories\\OrderRepository.cs",
               "RelativeDocumentMoniker": "src\\RestauranteAPI.Infrastructure\\Repositories\\OrderRepository.cs",
               "ToolTip": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\Repositories\\OrderRepository.cs",
               "RelativeToolTip": "src\\RestauranteAPI.Infrastructure\\Repositories\\OrderRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T16:44:52.719Z"
+              "WhenOpened": "2025-08-21T16:44:52.719Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\Repositories\\ProductRepository.cs",
               "RelativeDocumentMoniker": "src\\RestauranteAPI.Infrastructure\\Repositories\\ProductRepository.cs",
               "ToolTip": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\Repositories\\ProductRepository.cs",
               "RelativeToolTip": "src\\RestauranteAPI.Infrastructure\\Repositories\\ProductRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAA0wDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T16:44:44.643Z"
+              "WhenOpened": "2025-08-21T16:44:44.643Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "TableRepository.cs",
               "DocumentMoniker": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\Repositories\\TableRepository.cs",
               "RelativeDocumentMoniker": "src\\RestauranteAPI.Infrastructure\\Repositories\\TableRepository.cs",
               "ToolTip": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\Repositories\\TableRepository.cs",
               "RelativeToolTip": "src\\RestauranteAPI.Infrastructure\\Repositories\\TableRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T16:44:37.688Z"
+              "WhenOpened": "2025-08-21T16:44:37.688Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "OrderItemConfiguration.cs",
               "DocumentMoniker": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\Configurations\\OrderItemConfiguration.cs",
               "RelativeDocumentMoniker": "src\\RestauranteAPI.Infrastructure\\Configurations\\OrderItemConfiguration.cs",
@@ -130,12 +133,11 @@
               "RelativeToolTip": "src\\RestauranteAPI.Infrastructure\\Configurations\\OrderItemConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T16:44:26.738Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-21T16:44:26.738Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "OrderConfiguration.cs",
               "DocumentMoniker": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\Configurations\\OrderConfiguration.cs",
               "RelativeDocumentMoniker": "src\\RestauranteAPI.Infrastructure\\Configurations\\OrderConfiguration.cs",
@@ -148,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ProductConfiguration.cs",
               "DocumentMoniker": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\Configurations\\ProductConfiguration.cs",
               "RelativeDocumentMoniker": "src\\RestauranteAPI.Infrastructure\\Configurations\\ProductConfiguration.cs",
@@ -156,12 +158,11 @@
               "RelativeToolTip": "src\\RestauranteAPI.Infrastructure\\Configurations\\ProductConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T16:44:06.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-21T16:44:06.15Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "TableConfiguration.cs",
               "DocumentMoniker": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\Configurations\\TableConfiguration.cs",
               "RelativeDocumentMoniker": "src\\RestauranteAPI.Infrastructure\\Configurations\\TableConfiguration.cs",
@@ -169,12 +170,11 @@
               "RelativeToolTip": "src\\RestauranteAPI.Infrastructure\\Configurations\\TableConfiguration.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAIwBgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T16:43:58.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-21T16:43:58.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "RestauranteContext.cs",
               "DocumentMoniker": "C:\\Projetos\\RestauranteAPI\\src\\RestauranteAPI.Infrastructure\\Context\\RestauranteContext.cs",
               "RelativeDocumentMoniker": "src\\RestauranteAPI.Infrastructure\\Context\\RestauranteContext.cs",
@@ -182,8 +182,7 @@
               "RelativeToolTip": "src\\RestauranteAPI.Infrastructure\\Context\\RestauranteContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T16:43:40.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-21T16:43:40.283Z"
             },
             {
               "$type": "Document",
