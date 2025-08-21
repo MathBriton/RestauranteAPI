@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestauranteAPI.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fc100888163544d2d505d21b0ff571d37437629")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6eabac94fe538329327e521146ec8796aa173f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestauranteAPI.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestauranteAPI.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
