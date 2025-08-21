@@ -1,41 +1,91 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.EntityFraemeworkCore;
+using Microsoft.EntityFrameworkCore;
+using RestauranteAPI.Application.Interfaces;
+using RestauranteAPI.Application.Services;
+using RestauranteAPI.Domain.Repositories;
+using RestauranteAPI.Infrastructure.Context;
+using RestauranteAPI.Infrastructure.Repositories;
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+var builder = WebApplication.CreateBuilder(args);
+// EF CORE
+builder.Services.AddDbContext<RestauranteContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+//Repositories
+builder.Services.AddScoped<ITableRepository, TableRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+//Serviços /Cases
+builder.Services.AddScoped<ITableService, TableService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
-
+app.UseSwagger();
+app.UseSwaggerUI();
 app.UseHttpsRedirection();
 
-var summaries = new[]
+//Endpoiints : Mesa de Clientes
+app.MapGet("/tables", async (ITableService service) =>
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+    var tables = await service.GetAllTablesAsync();
+    return Results.Ok(tables);
+});
 
-app.MapGet("/weatherforecast", () =>
+app.MapPost("/tables", async (int number, ITableService service) =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    var table = await service.OpenTableAsync(number);
+    return Results.Created($"/tables/{table.Id}", table);
+});
 
-app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+app.MapPut("/tables/{id}/close", async (int id, ITableService service) =>
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
+    await service.CloseTableAsync(id);
+    return Results.NoContent();
+});
+//Endpoints : Produtos
+app.MapGet("/products", async (IProductService service) =>
+{
+    var products = await service.GetAllProductsAsync();
+    return Results.Ok(products);
+});
+
+app.MapPost("/products", async (string name, decimal price, IProductService service) =>
+{
+    var product = await service.CreateProductAsync(name, price);
+    return Results.Created($"/products/{product.Id}", product);
+});
+
+app.MapPut("/products/{id}", async (int id, string name, decimal price, IProductService service) =>
+{
+    await service.UpdateProductAsync(id, name, price);
+    return Results.NoContent();
+});
+//Endpoints : Pedidos
+app.MapGet("/orders", async (IOrderService service) =>
+{
+    var orders = await service.GetAllOrderAsync();
+    return Results.Ok(orders);
+});
+
+app.MapPost("/orders", async (int tableId, IOrderService service) =>
+{
+    var order = await.service.CreateOrderAsync(tableId);
+    return Results.Created($"/orders/{order.Id}", order);
+});
+
+app.MapPost("/orders/{orderId}/items", async (int orderId, int productId, int quantity, IOrderService service) =>
+{
+    await service.AddItemToOrderAsync(orderId, productId, quantity);
+    return Results.NoContent();
+});
+
+app.MapPut("/orders/{orderId}/close", async (int orderId, IOrderService, service) =>
+{
+    await service.CloseOrderAsync(orderId);
+    return Results.NoContent();
+});
+
