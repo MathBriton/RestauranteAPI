@@ -1,28 +1,30 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using RestauranteAPI.Domain.Entities;
+﻿using RestauranteAPI.Domain.Entities;
 
-namespace RestauranteAPI.Infrastructure.Configurations;
-
-public class OrderConfiguration : IEntityTypeConfiguration<Order>
+public class OrderItem
 {
-    public void Configure(EntityTypeBuilder<Order> builder)
+    public int Id { get; set; }
+    public int OrderId { get; set; }
+    public int ProductId { get; set; }
+    public int Quantity { get; set; }
+    public decimal Price { get; set; }
+
+    public Order? Order { get; set; }
+    public Product? Product { get; set; }
+
+    // Construtor protegido para EF Core
+    protected OrderItem() { }
+
+    // Construtor público com 4 argumentos
+    public OrderItem(int orderId, int productId, int quantity, decimal price)
     {
-        builder.ToTable("Orders");
-        builder.HasKey(o => o.Id);
+        if (quantity <= 0)
+            throw new ArgumentException("Quantidade deve ser maior que zero.");
+        if (price < 0)
+            throw new ArgumentException("Preço não pode ser negativo.");
 
-        builder.Property(o => o.CreatedAt)
-               .IsRequired();
-
-        builder.Property(o => o.IsClosed)
-               .IsRequired();
-
-        builder.HasMany(o => o.Items)
-               .WithOne()
-               .HasForeignKey(i => i.OrderId);
-
-        builder.HasOne(o => o.Table)
-               .WithMany(t => t.Orders)
-               .HasForeignKey(o => o.TableId);
+        OrderId = orderId;
+        ProductId = productId;
+        Quantity = quantity;
+        Price = price;
     }
 }

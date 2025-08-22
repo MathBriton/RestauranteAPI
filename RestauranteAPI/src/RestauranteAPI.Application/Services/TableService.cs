@@ -1,41 +1,38 @@
-﻿using RestauranteAPI.Application.DTOs;
+﻿using RestauranteAPI.Application.Interfaces;
 using RestauranteAPI.Domain.Entities;
-using RestauranteAPI.Domain.Interfaces;
 using RestauranteAPI.Domain.Repositories;
 
 namespace RestauranteAPI.Application.Services
 {
-    public class TableService
+    public class TableService : ITableService
     {
-        private readonly ITableRepository _repository;
+        private readonly ITableRepository _tableRepository;
 
-        public TableService(ITableRepository repository)
+        public TableService(ITableRepository tableRepository)
         {
-            _repository = repository;
+            _tableRepository = tableRepository;
         }
 
-        public async Task<IEnumerable<TableDto>> GetAllAsync()
+        public async Task<IEnumerable<Table>> GetAllTablesAsync()
         {
-            var tables = await _repository.GetAllAsync();
-            return tables.Select(t => new TableDto
-            {
-                Id = t.Id,
-                Number = t.Number,
-                Status = t.Status
-            });
+            return await _tableRepository.GetAllAsync();
         }
 
-        public async Task<TableDto> CreateAsync(TableDto dto)
+        public async Task<Table> OpenTableAsync(int number)
         {
-            var table = new Table(dto.Number, dto.Status);
-            await _repository.AddAsync(table);
+            var table = new Table(number, "aberta");
+            await _tableRepository.AddAsync(table);
+            return table;
+        }
 
-            return new TableDto
+        public async Task CloseTableAsync(int id)
+        {
+            var table = await _tableRepository.GetByIdAsync(id);
+            if (table != null)
             {
-                Id = table.Id,
-                Number = table.Number,
-                Status = table.Status
-            };
+                table.Status = "fechada";
+                await _tableRepository.UpdateAsync(table);
+            }
         }
     }
 }

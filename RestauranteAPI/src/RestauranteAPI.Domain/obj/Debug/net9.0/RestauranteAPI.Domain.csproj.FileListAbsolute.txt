@@ -1,0 +1,12 @@
+C:\Projetos\RestauranteAPI\src\RestauranteAPI.Domain\bin\Debug\net9.0\RestauranteAPI.Domain.deps.json
+C:\Projetos\RestauranteAPI\src\RestauranteAPI.Domain\bin\Debug\net9.0\RestauranteAPI.Domain.dll
+C:\Projetos\RestauranteAPI\src\RestauranteAPI.Domain\bin\Debug\net9.0\RestauranteAPI.Domain.pdb
+C:\Projetos\RestauranteAPI\src\RestauranteAPI.Domain\obj\Debug\net9.0\RestauranteAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\RestauranteAPI\src\RestauranteAPI.Domain\obj\Debug\net9.0\RestauranteAPI.Domain.AssemblyInfoInputs.cache
+C:\Projetos\RestauranteAPI\src\RestauranteAPI.Domain\obj\Debug\net9.0\RestauranteAPI.Domain.AssemblyInfo.cs
+C:\Projetos\RestauranteAPI\src\RestauranteAPI.Domain\obj\Debug\net9.0\RestauranteAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\RestauranteAPI\src\RestauranteAPI.Domain\obj\Debug\net9.0\RestauranteAPI.Domain.sourcelink.json
+C:\Projetos\RestauranteAPI\src\RestauranteAPI.Domain\obj\Debug\net9.0\RestauranteAPI.Domain.dll
+C:\Projetos\RestauranteAPI\src\RestauranteAPI.Domain\obj\Debug\net9.0\refint\RestauranteAPI.Domain.dll
+C:\Projetos\RestauranteAPI\src\RestauranteAPI.Domain\obj\Debug\net9.0\RestauranteAPI.Domain.pdb
+C:\Projetos\RestauranteAPI\src\RestauranteAPI.Domain\obj\Debug\net9.0\ref\RestauranteAPI.Domain.dll

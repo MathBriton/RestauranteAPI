@@ -1,4 +1,3 @@
-using Microsoft.EntityFraemeworkCore;
 using Microsoft.EntityFrameworkCore;
 using RestauranteAPI.Application.Interfaces;
 using RestauranteAPI.Application.Services;
@@ -7,14 +6,17 @@ using RestauranteAPI.Infrastructure.Context;
 using RestauranteAPI.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
-// EF CORE
+
+// ===== EF Core =====
 builder.Services.AddDbContext<RestauranteContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-//Repositories
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// ===== Repositórios =====
 builder.Services.AddScoped<ITableRepository, TableRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
-//Serviços /Cases
+
+// ===== Serviços / Cases de uso =====
 builder.Services.AddScoped<ITableService, TableService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
@@ -28,7 +30,8 @@ app.UseSwagger();
 app.UseSwaggerUI();
 app.UseHttpsRedirection();
 
-//Endpoiints : Mesa de Clientes
+
+// ===== Endpoints: Mesas =====
 app.MapGet("/tables", async (ITableService service) =>
 {
     var tables = await service.GetAllTablesAsync();
@@ -46,7 +49,9 @@ app.MapPut("/tables/{id}/close", async (int id, ITableService service) =>
     await service.CloseTableAsync(id);
     return Results.NoContent();
 });
-//Endpoints : Produtos
+
+
+// ===== Endpoints: Produtos =====
 app.MapGet("/products", async (IProductService service) =>
 {
     var products = await service.GetAllProductsAsync();
@@ -64,7 +69,9 @@ app.MapPut("/products/{id}", async (int id, string name, decimal price, IProduct
     await service.UpdateProductAsync(id, name, price);
     return Results.NoContent();
 });
-//Endpoints : Pedidos
+
+
+// ===== Endpoints: Pedidos =====
 app.MapGet("/orders", async (IOrderService service) =>
 {
     var orders = await service.GetAllOrderAsync();
@@ -73,7 +80,7 @@ app.MapGet("/orders", async (IOrderService service) =>
 
 app.MapPost("/orders", async (int tableId, IOrderService service) =>
 {
-    var order = await.service.CreateOrderAsync(tableId);
+    var order = await service.CreateOrderAsync(tableId);
     return Results.Created($"/orders/{order.Id}", order);
 });
 
@@ -83,9 +90,10 @@ app.MapPost("/orders/{orderId}/items", async (int orderId, int productId, int qu
     return Results.NoContent();
 });
 
-app.MapPut("/orders/{orderId}/close", async (int orderId, IOrderService, service) =>
+app.MapPut("/orders/{orderId}/close", async (int orderId, IOrderService service) =>
 {
     await service.CloseOrderAsync(orderId);
     return Results.NoContent();
 });
 
+app.Run();

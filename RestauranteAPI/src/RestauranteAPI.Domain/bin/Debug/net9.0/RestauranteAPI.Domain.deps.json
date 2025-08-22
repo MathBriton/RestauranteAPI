@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "RestauranteAPI.Domain/1.0.0": {
+        "runtime": {
+          "RestauranteAPI.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RestauranteAPI.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

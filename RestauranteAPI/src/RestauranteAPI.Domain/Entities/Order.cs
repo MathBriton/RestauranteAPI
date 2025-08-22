@@ -1,43 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RestauranteAPI.Domain.Entities;
-
-public class Order
+﻿namespace RestauranteAPI.Domain.Entities
 {
-    public int Id { get; private set; }
-    public int TableId { get; private set; }
-    public Table Table { get; private set; }
-    public DateTime CreatedAt { get; private set; } = DateTime.UtcNow;
-    public bool IsClosed { get; private set; }
-
-    private readonly List<OrderItem> _items = new();
-    public IReadOnlyCollection<OrderItem> Items => _items.AsReadOnly();
-
-    private Order() { } // EF Core
-
-    public Order(int tableId)
+    public class Order
     {
-        TableId = tableId;
-        IsClosed = false;
-    }
+        public int Id { get; set; }
+        public int TableId { get; set; }
 
-    public void AddItem(Product product, int quantity)
-    {
-        if (IsClosed) throw new InvalidOperationException("Não é possível adicionar itens a um pedido fechado.");
-        if (quantity <= 0) throw new ArgumentException("Quantidade deve ser maior que zero.");
+        // Propriedade de navegação
+        public Table Table { get; set; }
 
-        var item = new OrderItem(Id, product.Id, product.Price, quantity);
-        _items.Add(item);
-    }
+        public ICollection<OrderItem> Items { get; set; } = new List<OrderItem>();
+        public bool IsClosed { get; set; } = false;
 
-    public decimal GetTotal() => _items.Sum(i => i.GetTotal());
+        // Construtor protegido para EF Core
+        protected Order() { }
 
-    public void Close()
-    {
-        IsClosed = true;
+        // Construtor público com tableId para uso no código
+        public Order(int tableId)
+        {
+            TableId = tableId;
+        }
+
+        // Método de domínio para adicionar item
+        public void AddItem(Product product, int quantity)
+        {
+            if (IsClosed)
+                throw new InvalidOperationException("Pedido fechado não pode receber itens.");
+            if (quantity <= 0)
+                throw new ArgumentException("Quantidade deve ser maior que zero.");
+
+            Items.Add(new OrderItem(this.Id, product.Id, quantity));
+        }
+
+        // Método de domínio para fechar pedido
+        public void Close()
+        {
+            IsClosed = true;
+        }
     }
 }
